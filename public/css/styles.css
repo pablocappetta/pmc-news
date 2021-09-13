@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 12px;
+}
+
+.ag-root-wrapper {
+  border-radius: 3px;
+}
+
+/* ag-layout-normal ag-ltr ag-keyboard-focus */
+
+.productos {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+hr {
+  border-color: #666;
+  border-width: 1px;
+  width: 60%;
+  opacity: 5%;
+}
+
+header {
+  background-color: #3e6bfd;
+  margin: auto;
+  width: 100%;
+}
+
+article {
+}
+
+.box {
+  transition: box-shadow 0.3s;
+  border-bottom: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  box-shadow: 0 0 11px rgba(172, 172, 172, 0.2);
+  background: #fff;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  float: left;
+}
+.box:hover {
+  box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.precio-dcto-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+}
+
+nav.menu {
+  width: 100%;
+}
+
+.beneficios-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  color: #666;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+p {
+  font-size: 12px;
+}
+
+p.grids {
+  color: #666;
+  margin-top: 5px;
+  text-align: center;
+}
+
+p.descripciones {
+  font-size: 16px;
+}
+
+.burger-menu {
+  background-color: none;
+  color: white;
+  font-size: 1.5em;
+  width: 1em;
+  height: 1em;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos-beneficios {
+  color: #3e6bfd;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#logo {
+  justify-content: left;
+  display: flex;
+  width: 120px;
+  filter: invert(100%);
+}
+
+#boton-buscador {
+  background: none;
+  border: none;
+  color: white;
+}
+
+#copyright {
+  text-align: center;
+  color: #666;
+  font-size: 10px;
+  margin-top: 10mm;
+}
+
+.buscador {
+  text-align: center;
+  width: 150px;
+  height: 30px;
+  border: 0px;
+  border-radius: 3px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.logo-buscador-card {
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-content: center;
+}
+
+#subtitulo-card {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.iconos-nav {
+  margin-right: 5px;
+  margin-left: 5px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.iconos-nav:hover {
+  color: rgb(49, 49, 49);
+}
+
+.fa-user-circle {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.ultimas-visitas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.titulo-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.enlaces {
+  color: white;
+}
+
+.cripto-grid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+}
+
+.ofertas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+} */
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: none;
+  width: 100%;
+}
+
+.opciones-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.opciones-card:hover {
+  color: rgb(49, 49, 49);
+}
+
+a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+a:link {
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+a:hover {
+  color: rgb(49, 49, 49);
+}
+
+.ag-theme-alpine {
+  font-family: Roboto;
+}
+
+#myGrid {
+  font-family: Roboto;
+}
+
+/*
+Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a;*/
