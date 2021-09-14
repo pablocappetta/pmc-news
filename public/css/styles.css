@@ -4,10 +4,9 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #ebebeb;
-  width: 100%;
+  min-width: fit-content;
+  margin: auto;
 }
 
 ul {
@@ -31,20 +30,30 @@ ul {
   margin-right: 10px;
 }
 
-hr {
+/*hr {
   border-color: #666;
   border-width: 1px;
   width: 60%;
   opacity: 5%;
+}*/
+
+hr {
+  border: 0;
+  border-width: 1px;
+  width: 60%;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.13),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 header {
   background-color: #3e6bfd;
   margin: auto;
   width: 100%;
-}
-
-article {
 }
 
 .box {
@@ -73,8 +82,15 @@ article {
   height: 30px;
 }
 
-nav.menu {
-  width: 100%;
+.beneficios-padre {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("/img-whitestripes.jpg");
+  background-size: cover;
 }
 
 .beneficios-card {
@@ -82,7 +98,7 @@ nav.menu {
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  background-color: white;
+  background-size: cover;
 }
 
 footer {
@@ -184,10 +200,6 @@ p.descripciones {
   color: rgb(255, 255, 255);
 }
 
-.iconos-nav:hover {
-  color: rgb(49, 49, 49);
-}
-
 .fa-user-circle {
   margin-left: 2px;
   margin-right: 2px;
@@ -277,7 +289,7 @@ a:active {
 }
 
 a:hover {
-  color: rgb(49, 49, 49);
+  color: #99b1ffa1;
 }
 
 .ag-theme-alpine {
