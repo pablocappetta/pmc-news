@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+#link-logo {
+  margin: 0px;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #ebebeb;

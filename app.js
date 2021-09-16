@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const path = require("path");
 
-app.listen(45345, () => {
-  console.log("Servidor iniciado en puerto 45345");
-  console.log("Servidor: http://localhost:45345");
+app.listen(42242, () => {
+  console.log("Servidor iniciado en puerto 42242");
+  console.log("Servidor: http://localhost:42242");
 });
 
 app.get("/", (req, res) => {

@@ -18,20 +18,17 @@
       rel="stylesheet"
       href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
     />
-    <title>JPMC News</title>
+    <title>PMC News</title>
   </head>
   <body>
     <header>
       <div class="logo-buscador-card">
-        <img id="logo" src="/jpm-logo.png" alt="Mercado Liebre logo" />
+        <a id="link-logo" href="http://localhost:3000"><img id="logo" src="/jpm-logo.png" alt="JPMC Logo" /></a>
         <input
           type="text"
           placeholder="Search any article..."
           class="buscador box"
         />
-        <!-- <button type="submit" id="boton-buscador">
-          <i class="fa fa-search search"></i>
-        </button> -->
       </div>
       <div id="subtitulo-card">
         <i class="fas fa-university iconos-nav"></i>
@@ -60,6 +57,7 @@
           ></div>
 
           <script type="text/javascript" charset="utf-8">
+
             // specify the columns
             const columnDefs = [
               { field: "currency", filter: "agTextColumnFilter" },
@@ -105,7 +103,6 @@
           <div class="precio-dcto-card">
             <p class="descripciones">World economy is changing</p>
           </div>
-          <!-- <strong>Cafetera Moulinex</strong> -->
         </article>
         <br />
         <article class="productos box">
@@ -119,7 +116,6 @@
           <div class="precio-dcto-card">
             <p class="descripciones">Apple vs. Epic: What's next?</p>
           </div>
-          <!-- <strong>MacBook Pro 2019</strong> -->
         </article>
         <br />
         <article class="productos box">
@@ -133,7 +129,6 @@
           <div class="precio-dcto-card">
             <p class="descripciones">New iPhone: What to expect</p>
           </div>
-          <!-- <strong>Samsung Galaxy S10</strong> -->
         </article>
         <br />
         <article class="productos box">
@@ -142,7 +137,7 @@
           <div class="precio-dcto-card">
             <p class="descripciones">Uala becomes the new unicorn!</p>
           </div>
-          <!-- <strong>SmartTv Samsung 43"</strong> -->
+
         </article>
       </section>
     </main>
@@ -181,10 +176,11 @@
       <br/>
     </div>
     </section>
+    <footer>
+      <p id="copyright">
+        Made with love and a lot of patience (c) 2018-2021 @ PMC News
+      </p>
+    </footer>
   </body>
-  <footer>
-    <p id="copyright">
-      Made with love and a lot of patience (c) 2018-2021 JPMC News
-    </p>
-  </footer>
+
 </html>
