@@ -18,7 +18,7 @@
       rel="stylesheet"
       href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
     />
-    <title>PMC News</title>
+    <title>JPMC News</title>
   </head>
   <body>
     <header>
@@ -58,7 +58,6 @@
 
           <script type="text/javascript" charset="utf-8">
 
-            // specify the columns
             const columnDefs = [
               { field: "currency", filter: "agTextColumnFilter" },
               { field: "price", filter: "agNumberColumnFilter" },
@@ -68,18 +67,14 @@
               },
             ];
 
-            // let the grid know which columns to use
             const gridOptions = {
               columnDefs: columnDefs,
             };
 
-            // lookup the container we want the Grid to use
             const eGridDiv = document.querySelector("#myGrid");
 
-            // create the grid passing in the div to use together with the columns & data we want to use
             new agGrid.Grid(eGridDiv, gridOptions);
 
-            // fetch the row data to use and one ready provide it to the Grid via the Grid API
             agGrid
               .simpleHttpRequest({
                 url: "https://api.nomics.com/v1/currencies/ticker?key=97ea8bc7771311667b472b9cefdb3bbbeaf81385&ids=BTC,ETH,SOL,ICP",
